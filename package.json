@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/realpython/ultimate-flask-front-end.git"
+    "url": "git+https://github.com/ianagpawa/react-python.git"
   },
   "author": "Ian Agpawa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/realpython/ultimate-flask-front-end/issues"
+    "url": "https://github.com/ianagpawa/react-python/issues"
   },
-  "homepage": "https://github.com/realpython/ultimate-flask-front-end#readme",
+  "homepage": "https://github.com/ianagpawa/react-python#readme",
   "devDependencies": {
     "bower": "^1.7.9",
     "del": "^2.2.0",
