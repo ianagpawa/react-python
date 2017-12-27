@@ -7,12 +7,13 @@
 
 ### Dependencies
 This app requires the following dependencies to be install on your system:
-`python`
-`python-pip`
-`virtualenv`
-`node`
-`npm`
-`bower`
+
+*   `python`
+*   `python-pip`
+*   `virtualenv`
+*   `node`
+*   `npm`
+*   `bower`
 
 #### Requirements
 While the terminal is in the project folder, execute the following commands to install requirements:
@@ -30,6 +31,7 @@ In order to view the app, navigate the terminal into the project folder and exec
 ```
 python project/app.py
 ```
+##### -OR-
 
 ##### Shell
 ```
