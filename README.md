@@ -15,6 +15,14 @@ This app requires the following dependencies to be install on your system:
 *   `npm`
 *   `bower`
 
+#### Install Dependencies
+While the terminal is in the project folder, execute the following commands:
+```
+$   npm install
+$   bower install
+```
+
+
 #### Requirements
 While the terminal is in the project folder, execute the following commands to install requirements:
 ```
