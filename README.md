@@ -29,15 +29,15 @@ In order to view the app, navigate the terminal into the project folder and exec
 
 ##### Python
 ```
-python project/app.py
+$   python project/app.py
 ```
 ##### -OR-
 
 ##### Shell
 ```
-sh run.sh
+$   sh run.sh
 ```
-Open your browser to `http://localhost:5000`:
+Open your browser to `http://localhost:5000`.
 
 
 ### What's included
@@ -46,32 +46,26 @@ Within the project folder, you will find the following files:
 ```
 react-python/
     ├── project/
-    |   ├── actions/
-    |   |    ├── client_secrets.js (NOT INCLUDED)
-    |   |    └── index.js
-    |   ├── components/
-    |   |    ├── app.js
-    |   |    ├── chart.js
-    |   |    └── google_map.js
-    |   ├── containers/
-    |   |    ├── search_bar.js
-    |   |    └── weather_list.js
-    |   ├── reducers/
-    |   |    ├── index.js
-    |   |    └── reducer_weather.js
-    |   └── index.js
-    ├── style/
-    |   └── style.css
-    ├── test/
-    |   ├── components/
-    |   |    └── app_test.js
-    |   └── test_helper.js
+    |   ├── static/
+    |   |   ├── css/
+    |   |   |   └── style.css
+    |   |   └── scripts/
+    |   |       ├── js/
+    |   |       |   └── main.js
+    |   |       └── jsx/
+    |   |           └── main.js
+    |   ├── templates/
+    |   |   ├── hello.html
+    |   |   └── index.html
+    |   └── app.py
+    ├── .bowerrc
     ├── .gitignore
-    ├── index.html
-    ├── package-lock.json
+    ├── bower.json
+    ├── gulpfile.js
     ├── package.json
     ├── README.md
-    └── webpack.config.js
+    ├── requirements.txt
+    └── run.sh
 ```
 
 ## Creator
@@ -81,8 +75,8 @@ react-python/
  agpawaji@gmail.com
 
 
-
-Be sure to check out the blog posts-
+### Credits
+Be sure to check out the blog posts
 
 1. https://realpython.com/blog/python/the-ultimate-flask-front-end/
-1. https://realpython.com/blog/python/the-ultimate-flask-front-end-part-2/
+2. https://realpython.com/blog/python/the-ultimate-flask-front-end-part-2/
