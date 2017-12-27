@@ -6,7 +6,13 @@
 -Clone the repo: `git clone https://github.com/ianagpawa/react-python.git`
 
 ### Dependencies
-This app requires `python`, `python-pip`, and `virtualenv` to be installed on your system.
+This app requires the following dependencies to be install on your system:
+`python`
+`python-pip`
+`virtualenv`
+`node`
+`npm`
+`bower`
 
 #### Requirements
 While the terminal is in the project folder, execute the following commands to install requirements:
