@@ -1,7 +1,7 @@
 {
-  "name": "ultimate-flask-front-end",
+  "name": "react-python",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Flask app with React",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/realpython/ultimate-flask-front-end.git"
   },
-  "author": "",
+  "author": "Ian Agpawa",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/realpython/ultimate-flask-front-end/issues"
