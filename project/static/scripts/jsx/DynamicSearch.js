@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 
 class DynamicSearch extends Component {
-    getInitialState() {
-        return { searchString: " "};
+    constructor(props) {
+        super(props);
+
+        this.state = { searchString: " "}
     }
+
+    // getInitialState() {
+    //     return { searchString: " "};
+    // }
 
     handleChange(event) {
         this.setState({searchString: event.target.value});
@@ -12,7 +18,7 @@ class DynamicSearch extends Component {
 
 
     render() {
-        const countries = this.props.items;
+        let countries = this.props.items;
         const searchString = this.state.searchString.trim().toLowerCase();
 
         // filter countries list by value from input box
