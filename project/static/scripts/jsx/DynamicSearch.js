@@ -1,41 +1,76 @@
-const DynamicSearch = React.createClass({
+import React, { Component } from 'react';
 
-  // sets initial state
-  getInitialState: function(){
-    return { searchString: '' };
-  },
-
-  // sets state, triggers render method
-  handleChange: function(event){
-    // grab value form input box
-    this.setState({searchString:event.target.value});
-    console.log("scope updated!");
-  },
-
-  render: function() {
-
-    var countries = this.props.items;
-    var searchString = this.state.searchString.trim().toLowerCase();
-
-    // filter countries list by value from input box
-    if(searchString.length > 0){
-      countries = countries.filter(function(country){
-        return country.name.toLowerCase().match( searchString );
-      });
+class DynamicSearch extends Component {
+    getInitialState() {
+        return { searchString: " "};
     }
 
-    return (
-      <div>
-        <input type="text" value={this.state.searchString} onChange={this.handleChange} placeholder="Search!" />
-        <ul>
-          { countries.map(function(country){ return <li>{country.name} </li> }) }
-        </ul>
-      </div>
-    )
-  }
+    handleChange(event) {
+        this.setState({searchString: event.target.value});
 
-});
+    }
 
 
+    render() {
+        const countries = this.props.items;
+        const searchString = this.state.searchString.trim().toLowerCase();
+
+        // filter countries list by value from input box
+        if(searchString.length > 0){
+          countries = countries.filter(function(country){
+            return country.name.toLowerCase().match( searchString );
+          });
+        }
+
+        return (
+            <div>
+                <input type="text" value={this.state.searchString} onChange={this.handleChange} placeholder="Search!" />
+                <ul>
+                  { countries.map(function(country){ return <li>{country.name} </li> }) }
+                </ul>
+            </div>
+        );
+    }
+}
+//
+// const DynamicSearch = React.createClass({
+//
+//   // sets initial state
+//   getInitialState: function(){
+//     return { searchString: '' };
+//   },
+//
+//   // sets state, triggers render method
+//   handleChange: function(event){
+//     // grab value form input box
+//     this.setState({searchString:event.target.value});
+//     console.log("scope updated!");
+//   },
+//
+//   render: function() {
+//
+//     var countries = this.props.items;
+//     var searchString = this.state.searchString.trim().toLowerCase();
+//
+//     // filter countries list by value from input box
+//     if(searchString.length > 0){
+//       countries = countries.filter(function(country){
+//         return country.name.toLowerCase().match( searchString );
+//       });
+//     }
+//
+//     return (
+//       <div>
+//         <input type="text" value={this.state.searchString} onChange={this.handleChange} placeholder="Search!" />
+//         <ul>
+//           { countries.map(function(country){ return <li>{country.name} </li> }) }
+//         </ul>
+//       </div>
+//     )
+//   }
+//
+// });
+//
+//
 
 export default DynamicSearch;
